@@ -25,6 +25,7 @@
     <!-- ===============================================-->
     <!--    Stylesheets-->
     <!-- ===============================================-->
+    <link href="../vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="../vendors/loaders.css/loaders.min.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=PT+Mono%7cPT+Serif:400,400i%7cLato:100,300,400,700,800,900" rel="stylesheet">
@@ -85,140 +86,77 @@
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section class="py-6" id="page-single-product">
+      <section class="mt-5 mt-lg-0 py-lg-7" id="page-portfolio">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-8 pe-lg-6">
-              <div class="row">
-                <div class="col-12">
-                  <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb font-sans-serif py-2 my-1">
-                      <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-                      <li class="breadcrumb-item"><a href="../pages/shop.html">Shop</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">Shirts</li>
-                    </ol>
-                  </nav>
-                  <h1 class="fs-3 mb-2">sparrow shirt - the beginning</h1>
-                  <div class="stars d-inline-block"><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fa-layers fa-fw"><i class="fas fa-star-half"></i><i class="far fa-star-half" data-fa-transform="flip-h"></i></span><span class="far fa-star"></span></div><a class="d-inline-block ms-2 text-600 font-sans-serif" href="#!">125 customer review</a>
-                </div>
-                <div class="col-12 mt-4"><img class="rounded img-fluid" src="../assets/img/single-shop-1.jpg" alt="" /></div>
-                <div class="col-6 mt-4"><img class="rounded img-fluid" src="../assets/img/single-shop-2.jpg" alt="" /></div>
-                <div class="col-6 mt-4"><img class="rounded img-fluid" src="../assets/img/single-shop-3.jpg" alt="" /></div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="sticky-top py-6 py-lg-8">
-                <div class="badge border text-danger border-danger font-sans-serif"><span class="fas fa-star me-1"></span>Best Seller</div>
-                <h2 class="fw-normal">$11.00&nbsp;<del class="text-500 fw-light fs-2">$22.00</del></h2>
-                <h6 class="mt-4">Product details</h6>
-                <p class="text-600">Blue solid chambray shirt, has a spread collar, three-quarter sleeves, button closure, 1 pocket, curved hem.</p>
-                <h6 class="mt-4">Material &amp; Care</h6>
-                <p>Lyocell<br />Machine-wash</p>
-                <h6 class="mt-4">Select size</h6>
-                <div class="d-flex align-items-center mb-4 me-3">
-                  <div class="d-sm-flex align-items-center me-3"><label class="me-2 mb-0">Sizes</label><select class="form-select font-sans-serif">
-                      <option>xs</option>
-                      <option>s</option>
-                      <option>m</option>
-                      <option>l</option>
-                      <option>xl</option>
-                    </select></div>
-                  <div class="d-sm-flex align-items-center ms-3"><label class="me-2 mb-0">Quantity</label><select class="form-select font-sans-serif">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                    </select></div>
-                </div>
-                <div class="d-grid"><a class="btn btn-dark" href="../pages/cart.html">add to cart</a></div><a class="fs--1 text-900 d-block mt-4" href="#!">size guide</a><a class="fs--1 text-900 d-block" href="#!">delivery &amp; returns</a>
-              </div>
+          <div class="row mb-5 mb-lg-7">
+            <div class="col-lg-6">
+              <h1 class="text-decoration-underline d-inline fs-4 fs-md-5">community management</h1>
+              <p class="mt-3">The following layout is made using isotope, a Javascript plugin which allows you to create multi-column, dynamic grid layouts. The first script out there that allows you a complete gap-free layout.</p>
             </div>
           </div>
-        </div><!-- end of .container-->
-      </section><!-- <section> close ============================-->
-      <!-- ============================================-->
-
-
-
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section class="bg-light">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 text-center">
-              <h2 class="fs-2 fs-lg-3">sparrow top products</h2>
+          <ul class="nav font-sans-serif mb-2" data-filter-nav="data-filter-nav">
+            <li class="nav-item"><a class="nav-link isotope-nav active" href="#!" data-filter="*">all</a></li>
+            <li class="nav-item"><a class="nav-link isotope-nav" href="#!" data-filter=".photography">photography</a></li>
+            <li class="nav-item"> <a class="nav-link isotope-nav" href="#!" data-filter=".studio">studio</a></li>
+            <li class="nav-item"> <a class="nav-link isotope-nav" href="#!" data-filter=".interior">interior</a></li>
+            <li class="nav-item"> <a class="nav-link isotope-nav" href="#!" data-filter=".illustration">illustration</a></li>
+          </ul>
+          <div class="row g-3 mt-2" id="portfolio-gallery" data-zanim-timeline="{}" data-zanim-trigger="scroll" data-isotope='{"layoutMode":"packery"}'>
+            <div class="col-6 col-md-3 isotope-item interior">
+              <div class="hoverbox rounded overflow-hidden" data-zanim-xs='{"animation":"zoom-in"}'><img class="w-100" src="../assets/img/gallery/03.jpg" alt="" />
+                <div class="hoverbox-content bg-dark d-flex flex-center text-center">
+                  <div class="px-4">
+                    <h5 class="text-white">Next gen web interface design</h5><a class="btn btn-outline-light btn-xs mt-3" href="../pages/casestudy.html">learn more</a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 mt-6"><a class="row g-0" href="../pages/product-single.html">
-                <div class="col-12 overflow-hidden rounded position-relative" data-zanim-timeline='{"delay":0}' data-zanim-trigger="scroll">
-                  <div class="hoverbox">
-                    <div class="row">
-                      <div class="col"><img class="w-100" src="../assets/img/ecommerce/1.jpg" alt="" data-zanim-xs='{"delay":0.1,"animation":"zoom-in"}' /></div>
-                    </div>
-                    <div class="hoverbox-content hoverbox-background">
-                      <div class="hoverbox-bg d-flex flex-center h-100 w-100"><img class="w-100" src="../assets/img/ecommerce/2.jpg" alt="" /></div>
-                    </div>
+            <div class="col-6 col-md-3 isotope-item photography"><a href="#!" data-bp="../assets/img/gallery/07-f.jpg" data-bigpicture='{"gallery":"#portfolio-gallery"}' data-caption="my caption"><img class="rounded w-100 fit-cover" src="../assets/img/gallery/07.jpg" alt="" data-zanim-xs='{"animation":"zoom-in","delay":0.1}' /></a></div>
+            <div class="col-6 col-md-3 isotope-item photography"><a href="#!" data-bp="../assets/img/gallery/09-f.jpg" data-bigpicture='{"gallery":"#portfolio-gallery"}' data-caption="my caption"><img class="rounded w-100 fit-cover" src="../assets/img/gallery/09.jpg" alt="" data-zanim-xs='{"animation":"zoom-in","delay":0.7}' /></a></div>
+            <div class="col-6 col-md-3 isotope-item studio"><a href="#!" data-bp="../assets/img/gallery/04-f.jpg" data-bigpicture='{"gallery":"#portfolio-gallery"}' data-caption="my caption"><img class="rounded w-100 fit-cover" src="../assets/img/gallery/04.jpg" alt="" data-zanim-xs='{"animation":"zoom-in","delay":0.4}' /></a></div>
+            <div class="col-6 col-md-3 isotope-item interior">
+              <div class="hoverbox rounded overflow-hidden" data-zanim-xs='{"animation":"zoom-in","delay":0.2}'><img class="w-100 fit-cover" src="../assets/img/gallery/05.jpg" alt="" />
+                <div class="hoverbox-content bg-dark d-flex flex-center text-center">
+                  <div class="px-4">
+                    <h5 class="text-white">Next gen web interface design</h5><a class="btn btn-outline-light btn-xs mt-3" href="../pages/casestudy.html">learn more</a>
                   </div>
                 </div>
-                <div class="col-6 mt-2">
-                  <h5 class="fs-0">Tops &amp; Tees</h5>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 isotope-item studio illustration"><a href="#!" data-bp="../assets/img/gallery/06-f.jpg" data-bigpicture='{"gallery":"#portfolio-gallery"}' data-caption="my caption"><img class="rounded w-100 fit-cover" src="../assets/img/gallery/06.jpg" alt="" data-zanim-xs='{"animation":"zoom-in","delay":0.3}' /></a></div>
+            <div class="col-6 col-md-3 isotope-item photography"><a href="#!" data-bp="../assets/img/gallery/10-f.jpg" data-bigpicture='{"gallery":"#portfolio-gallery"}' data-caption="my caption"><img class="rounded w-100 fit-cover" src="../assets/img/gallery/10.jpg" alt="" data-zanim-xs='{"animation":"zoom-in","delay":0.5}' /></a></div>
+            <div class="col-6 col-md-3 isotope-item illustration">
+              <div class="position-relative"><img class="rounded w-100 fit-cover" src="../assets/img/gallery/01.jpg" alt="" data-zanim-xs='{"animation":"zoom-in","delay":0.6}' /><a class="d-flex align-items-end justify-content-end h-100 pb-3 pe-3 position-absolute bottom-0 end-0" href="#!" data-bigpicture='{"ytSrc":"HbAzApdYtdw"}' data-options='{"start":1,"end":64}'><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 274.19 274.19" data-zanim-svg='{"duration":2,"ease":"CubicBezier","trigger":"scroll"}'>
+                    <defs>
+                      <style>
+                        .play-path {
+                          fill: none;
+                          stroke: #ffffff;
+                          stroke-linecap: round;
+                          stroke-linejoin: round;
+                          stroke-width: 12px;
+                        }
+                      </style>
+                    </defs>
+                    <g>
+                      <path class="play-path" d="M208.31,29.4A129.12,129.12,0,1,1,137.1,8m-1.48,170.53L199.94,137,104.07,79.46v113"></path>
+                    </g>
+                  </svg></a></div>
+            </div>
+            <div class="col-12 col-sm-6 isotope-item illustration">
+              <div class="swiper-container theme-slider" data-swiper='{"autoplay":{"delay":3000},"loop":true,"slideToClickedSlide":true,"effect":"fade"}'>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img class="w-100 fit-cover rounded" src="../assets/img/gallery/11.jpg" alt="" /></div>
+                  <div class="swiper-slide"> <img class="w-100 fit-cover rounded" src="../assets/img/gallery/12.jpg" alt="" /></div>
                 </div>
-                <div class="col-6 mt-2 text-end">
-                  <h6 class="fw-normal mb-0 d-inline-block">&#36;354.00</h6>
+                <div class="swiper-nav">
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"> </div>
                 </div>
-              </a></div>
-            <div class="col-sm-6 col-md-4 col-lg-3 mt-6"><a class="row g-0" href="../pages/product-single.html">
-                <div class="col-12 overflow-hidden rounded position-relative" data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll">
-                  <div class="badge badge-rotate bg-success" data-zanim-xs='{"delay":0.8,"animation":"slide-down"}'>Now trending</div>
-                  <div class="row">
-                    <div class="col"><img class="w-100" src="../assets/img/ecommerce/15.jpg" alt="" data-zanim-xs='{"delay":0.1,"animation":"zoom-in"}' /></div>
-                  </div>
-                </div>
-                <div class="col-6 mt-2">
-                  <h5 class="fs-0">Women's Rib Knit Jersey Long-Sleeve</h5>
-                </div>
-                <div class="col-6 mt-2 text-end">
-                  <h6 class="fw-normal mb-0 d-inline-block">&#36;546.00</h6>
-                </div>
-              </a></div>
-            <div class="col-sm-6 col-md-4 col-lg-3 mt-6"><a class="row g-0" href="../pages/product-single.html">
-                <div class="col-12 overflow-hidden rounded position-relative" data-zanim-timeline='{"delay":0.2}' data-zanim-trigger="scroll">
-                  <div class="badge badge-rotate bg-warning" data-zanim-xs='{"delay":0.8,"animation":"slide-down"}'>Best selling</div>
-                  <div class="hoverbox">
-                    <div class="row">
-                      <div class="col"><img class="w-100" src="../assets/img/ecommerce/3.jpg" alt="" data-zanim-xs='{"delay":0.1,"animation":"zoom-in"}' /></div>
-                    </div>
-                    <div class="hoverbox-content hoverbox-background">
-                      <div class="hoverbox-bg d-flex flex-center h-100 w-100"><img class="w-100" src="../assets/img/ecommerce/4.jpg" alt="" /></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6 mt-2">
-                  <h5 class="fs-0">Wear to Work</h5>
-                </div>
-                <div class="col-6 mt-2 text-end">
-                  <h6 class="fw-normal mb-0 d-inline-block">&#36;234.00</h6>
-                  <h6 class="fw-normal text-600"><span class="d-inline-block"><del>&#36;454.00</del></span></h6>
-                </div>
-              </a></div>
-            <div class="col-sm-6 col-md-4 col-lg-3 mt-6"><a class="row g-0" href="../pages/product-single.html">
-                <div class="col-12 overflow-hidden rounded position-relative" data-zanim-timeline='{"delay":0.3}' data-zanim-trigger="scroll">
-                  <div class="hoverbox">
-                    <div class="row">
-                      <div class="col"><img class="w-100" src="../assets/img/ecommerce/5.jpg" alt="" data-zanim-xs='{"delay":0.1,"animation":"zoom-in"}' /></div>
-                    </div>
-                    <div class="hoverbox-content hoverbox-background">
-                      <div class="hoverbox-bg d-flex flex-center h-100 w-100"><img class="w-100" src="../assets/img/ecommerce/6.jpg" alt="" /></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6 mt-2">
-                  <h5 class="fs-0">Sunny Vacation</h5>
-                </div>
-                <div class="col-6 mt-2 text-end">
-                  <h6 class="fw-normal mb-0 d-inline-block">&#36;566.00</h6>
-                  <h6 class="fw-normal text-600"><span class="d-inline-block"><del>&#36;765.00</del></span></h6>
-                </div>
-              </a></div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 isotope-item interior"><a href="#!" data-bp="../assets/img/gallery/02-f.jpg" data-bigpicture='{"gallery":"#portfolio-gallery"}' data-caption="my caption"><img class="rounded w-100 fit-cover" src="../assets/img/gallery/02.jpg" alt="" data-zanim-xs='{"animation":"zoom-in","delay":0.3}' /></a></div>
+            <div class="col-6 col-md-3 isotope-item photography"><a href="../pages/casestudy.html"><img class="rounded w-100 fit-cover" src="../assets/img/gallery/08.jpg" alt="" data-zanim-xs='{"animation":"zoom-in","delay":0.4}' /></a></div>
           </div>
         </div><!-- end of .container-->
       </section><!-- <section> close ============================-->
@@ -275,6 +213,10 @@
     <script src="../vendors/bootstrap/bootstrap.min.js"></script>
     <script src="../vendors/anchorjs/anchor.min.js"></script>
     <script src="../vendors/is/is.min.js"></script>
+    <script src="../vendors/isotope-layout/isotope.pkgd.min.js"> </script>
+    <script src="../vendors/isotope-packery/packery-mode.pkgd.min.js"> </script>
+    <script src="../vendors/swiper/swiper-bundle.min.js"></script>
+    <script src="../vendors/bigpicture/BigPicture.js"></script>
     <script src="../vendors/fontawesome/all.min.js"></script>
     <script src="../vendors/lodash/lodash.min.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
