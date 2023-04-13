@@ -1,0 +1,11 @@
+
+extends ../layouts/LayoutTheme
+include ../mixins/pages/DeveloperContent
+
+block beforeMainContent
+  +FancyNav
+
+append mainContent  
+  +SingleProductDemo
+  +TopProducts
+
