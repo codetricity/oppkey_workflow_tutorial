@@ -1,6 +1,6 @@
-## Sparrow, a theme by ThemeWagon team.
----
-### Quick Start(without gulp)
-Just unzip the Sparrow. We have precompiled and packaged everything in the public directory for you.
-### For advance users (using gulp)
-Unzip Sparrow and open terminal at that location. Sparrow's dev tools require Node and Git. Make sure you have installed Node and Git at your machine. Install Gulp CLI globally. Then run npm i and gulp.
+# Oppkey Workflow
+
+## Pug Tutorials
+
+* [codetap Meet Pug](https://www.youtube.com/watch?v=2dCDu_8EVFA&list=PLlgRhtOkjmmAvyOIKHWfU-DVrLqRePWa1) - 23 videos
+* [dcode Pug (Jade) Tutorial](https://www.youtube.com/watch?v=AY99ODBchIA&list=PLVvjrrRCBy2JbOPP2JXfCtADABI1QHzWg) - 10 videos
